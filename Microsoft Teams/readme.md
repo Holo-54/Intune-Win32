@@ -1,4 +1,5 @@
 # Microsoft Teams
+## **Please first refer to Microsoft's newest document for uninstalling Teams classic using a script: https://learn.microsoft.com/en-us/microsoftteams/teams-client-uninstall-script**
 This package will uninstall Microsoft Teams classic and install the new Microsoft Teams using Microsoft's bootstrapper, built-in functions of Teams classic, and powershell.
 
 An issue I ran into when working on this was the bootstrapper would not uninstall Microsoft Teams classic completely. User registry keys were left intact due to the hive being unloaded, resulting in Microsoft Teams classic being detected and reported as a security vulnerability post-uninstall.
