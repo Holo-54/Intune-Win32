@@ -9,3 +9,9 @@ This script will follow the same process as the original script with some additi
 - Uninstall Microsoft Teams classic
 - Remove stray registry keys
 - Install new Microsoft Teams
+
+Intune information:
+- Install command: ```%SystemRoot%\sysnative\WindowsPowerShell\v1.0\powershell.exe -windowstyle hidden -executionpolicy bypass -command .\install.ps1```
+- Uninstall command: ```%SystemRoot%\sysnative\WindowsPowerShell\v1.0\powershell.exe -windowstyle hidden -executionpolicy bypass -command .\uninstall.ps1```
+- Detection: Use a custom detection script
+  - Upload file ```detection.ps1```
