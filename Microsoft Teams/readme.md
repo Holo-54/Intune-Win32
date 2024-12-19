@@ -11,11 +11,12 @@ This script will follow the same process as the original script with some additi
 - Remove stray registry keys
 - Install new Microsoft Teams
 
-Intune information:
+### Intune information:
 - Install command: ```%SystemRoot%\sysnative\WindowsPowerShell\v1.0\powershell.exe -windowstyle hidden -executionpolicy bypass -command .\install.ps1```
 - Uninstall command: ```%SystemRoot%\sysnative\WindowsPowerShell\v1.0\powershell.exe -windowstyle hidden -executionpolicy bypass -command .\uninstall.ps1```
 - Detection: Use a custom detection script
   - Upload file ```detection.ps1```
 
+### Installation logs
 Installation transcript default location: ```C:\ProgramData\Microsoft\IntuneManagementExtension\Logs\MicrosoftTeamsNEW-install.log```
 - This can be changed by modifying the variables ```$PackageName``` and ```$LogPath``` in lines 1-2 of ```install.ps1```
