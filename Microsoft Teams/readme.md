@@ -16,3 +16,6 @@ Intune information:
 - Uninstall command: ```%SystemRoot%\sysnative\WindowsPowerShell\v1.0\powershell.exe -windowstyle hidden -executionpolicy bypass -command .\uninstall.ps1```
 - Detection: Use a custom detection script
   - Upload file ```detection.ps1```
+
+Installation transcript default location: ```C:\ProgramData\Microsoft\IntuneManagementExtension\Logs\MicrosoftTeamsNEW-install.log```
+- This can be changed by modifying the variables ```$PackageName``` and ```$LogPath``` in lines 1-2 of ```install.ps1```
